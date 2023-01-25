@@ -8,7 +8,8 @@ def count_words(paragraph):
     paragraph = paragraph.translate(str.maketrans(
         ',', '.', string.punctuation))  # Removing puntuation
     words = paragraph.split()       # Converting words into list of words
-    count_words = Counter(words)   # Counts the words in the words
+    # Counts the words in the words as disctionary and return a dictionary
+    count_words = Counter(words)
 
     return count_words
 
